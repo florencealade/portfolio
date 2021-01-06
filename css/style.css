@@ -10,9 +10,9 @@
 /*----- MAIN STYLING -----*/
 body {
   width: 80%;
-  max-width: 700px;
+  max-width: 1400px;
   margin: auto;
-  background: #fdfdfd;
+  background: #E0E0E0;
   color: #333;
   font-family: "Roboto", sans-serif;
 }
@@ -55,8 +55,14 @@ blockquote cite {
   color: #333
 }
 
-p.cite {
-  font-family: "Roboto", sans-serif;
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+}
+p.nav {
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  text-align: left;
 }
 
 header h2 {
@@ -93,22 +99,28 @@ a:hover {
   color: #008080;
   border-bottom: 1px dotted;
 }
+
 /*----- NAVIGATION -----*/
 nav {
-  psition: fixed;
-  top: 0;
+  position: fixed;
+  top: 1em;
   left: 0;
   margin: 0;
+  margin-bottom: 50px;
   width: 100%;
-  background-color: #008080;
+  height: 100px;
+  background-color: #83ADB5;
   padding: 1em 0;
-  font-size: 0.75em;
+  font-size: 1em;
 }
 
-nav ul: {
-  text-align: center;
+nav ul {
+  text-align: right;
   text-transform: uppercase;
-  letter-spacing: 1px
+  letter-spacing: 4px;
+  word-spacing: 2px;
+  margin-top: 32px;
+
 }
 
 nav ul li {
@@ -118,80 +130,42 @@ nav ul li {
 }
 
 nav a:link {
-  color: #fdfdfd;
+  color: #000000;
 }
-
 
 nav a:visited {
-  color: #003838;
+  color: #828282;
 }
+
+nav a:hover {
+  border-bottom: none;
+  color: #83ADB5;
+  transition: all 0.4s ease-in-out;
+ }
+
+
 
 /*-----IMAGE-----*/
    img {
-     display: block;
+     display: flex;
      margin-left: auto;
      margin-right: auto;
-     width: 100%;
+     width: 50%;
    }
-
-/*-----STYLING TABLE-----*/
-table {
-  margin: auto;
-  display: table;
-  border-collapse: collapse;
-  border-spacing: 2px;
-  margin-bottom: 2em;
-  width: 100%
-}
-
-caption {
-  margin: 1.5em 0;
-  text-transform: uppercase:
-}
-
-th {
-  color: #fdfdfd
-  text-transform: uppercase;
-  font-weight: normal;
-  text-align: left;
-  background: #008080
-}
-
-th, td {
-  padding: 0.7em
-}
-
-table, td {
-  background: #fdfdfd
-  border: 2px solid #008080
-}
-
-/*-----IMAGES-----*/
-img.manifesto {
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     width: 50%;
-}
-
 img.iterations {
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     width: 50%;
-}
-
-img.rythm {
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     width: 50%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 
 /*----- FOOTER-----*/
 footer {
-  text-align: center;
   font-size: 0.707em;
-  padding: 4em 0 8em 0;
+  padding: 1em 0 2em 0;
+  margin-top: 8em;
+  position: relative;
+  background-color: #83ADB5;
+  bottom: 2em;
 }
